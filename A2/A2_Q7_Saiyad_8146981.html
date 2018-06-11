@@ -1,0 +1,75 @@
+<!--TA2: 8/15 multiple errors. Please run your script before you submit and have the javascript console open so that you can see the exceptions-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Assignment 2 - Q7</title>
+	<meta charset="utf-8" />
+
+</head>
+
+<body>
+	
+	<table id= "results" border="2">
+		<caption>Final Results</caption>
+		<tr>
+			<th colspan="4">
+				Complete Info
+			</th>
+		<tr>
+		<tr>
+			<th>
+				<strong> Products  </strong>
+			</th>
+			<th>
+				<strong> Price  </strong>
+			</th>
+			<th>
+				<strong> Quantity Sold </strong>
+			</th>
+			<th>
+				<strong> Total  </strong>
+			</th>
+		</tr>
+			<th>Product 1</th>
+			<td>$2.98</td>
+		</tr>
+		<tr>
+			<th>Product 2</th>
+			<td>$4.50</td>
+		</tr>
+		<tr>
+			<th>Product 3</th>
+			<td>$9.98</td>
+		</tr>
+		<tr>
+			<th>Product 4</th>
+			<td>$4.49</td>
+		</tr>
+		<tr>
+			<th>Product 5</th>
+			<td>$6.87</td>
+		</tr>
+	</table>
+	<br>
+	<button onclick="updateTable()">Update Table</button>
+	<script>
+
+		function updateTable(){
+		var productnum = prompt(" What Product out of 1 to 5 did you Purchase ?");
+		}
+
+		while(productnum!=null){	
+ 				if (isNaN(productnum) || parseInt(productnum) < 0 || parseInt(productnum) > 5) {
+                   productnum = prompt("Invalid entry, try again!");
+                }
+
+	</script>
+
+
+
+</body>
+
+</html>
+

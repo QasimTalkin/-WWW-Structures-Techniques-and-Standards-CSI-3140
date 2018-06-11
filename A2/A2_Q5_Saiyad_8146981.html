@@ -1,0 +1,37 @@
+<!--TA2: 10/10 Good Job!-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 2 - Q5</title>
+    </head>
+    <body>
+        <h1>Test The Multiple</h1>
+        <hr>
+        <label>
+            Input first value<br>
+            <input id="firstNum" type="number" min="0" step="1"/>
+        </label>
+        <br/>
+        <label>
+            Input second value<br>
+            <input id="secondNum" type="number" min="0" step="1"/>
+        </label>
+        <br><br>
+        <button onclick="multipleFunc()">Check</button>
+
+        <script>
+        function multipleFunc()
+        {
+        var remainder = (firstNum.value % secondNum.value) / 100; // divide by 100 is not necessary
+
+        if (remainder === 0) {
+         alert(firstNum.value+" is a multiple of "+secondNum.value);
+        }
+        else {
+             alert(firstNum.value+" is a not multiple of "+secondNum.value);
+        }
+    }
+        </script>
+    </body>
+</html>
+

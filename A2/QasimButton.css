@@ -1,0 +1,22 @@
+body {
+    background-color: lightblue;
+}
+
+.linktoCss {
+	text-align: center;
+}
+.button {
+	position: absolute;
+	height: 50px;
+	top:50%;
+	background-color: black;
+	color: red;
+	font-family: "Times New Roman", Times, serif;
+	border-radius: 15px;
+
+}
+.button:hover{
+	background-color: white;
+	color: green;
+	cursor: pointer;
+}

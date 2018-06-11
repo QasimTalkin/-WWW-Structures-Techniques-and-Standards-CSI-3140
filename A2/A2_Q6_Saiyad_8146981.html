@@ -1,0 +1,38 @@
+<!--TA2: 8/10 try the number 12345 -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 2 - Q6</title>
+    </head>
+    <body>
+        <h1>Palindrome Test</h1>
+        <hr>
+        <label>
+            Input number to be tested<br>
+            <input id="inputval" type="number" min="10000" max="99999" step="1"/>
+        </label>
+        <br>
+        <br>
+        <button onclick="palinFunc()">Check</button>
+
+        <script>
+        function palinFunc()
+        {
+
+            if (inputval.value.length != 5 || inputval[0]==0){
+                alert (inputval.value+" is invalid, please enter a number of length 5 and larger than 9999");
+            }
+            else {
+                if (inputval[0] == inputval[4] && inputval[1]!== inputval[3]) {
+                alert("This number is not a Palindrome");
+                 }
+                else { 
+                    alert(inputval.value+" is a Palindrome");
+
+                }
+            }
+    }
+        </script>
+    </body>
+</html>
+
